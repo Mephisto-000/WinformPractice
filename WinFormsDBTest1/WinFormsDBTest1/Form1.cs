@@ -20,10 +20,12 @@ namespace WinFormsDBTest1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            cn.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;" +
-                                  "AttachDbFilename=|DataDirectory|\\TestDB1.mdf;" +
-                                  "Integrated Security=True";
+            //cn.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;" +
+            //                      "AttachDbFilename=|DataDirectory|\\TestDB1.mdf;" +
+            //                      "Integrated Security=True";
             // ¸ô®| : C:\Github\WinformPractice\WinFormsDBTest1\WinFormsDBTest1\bin\Debug\net8.0-windows\TestDB1.mdf
+
+            cn.ConnectionString = Properties.Settings.Default.connectString;
 
             //cn.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;" +
             //                      @"AttachDbFilename=C:\Github\WinformPractice\WinFormsDBTest1\WinFormsDBTest1\TestDB1.mdf;" +
