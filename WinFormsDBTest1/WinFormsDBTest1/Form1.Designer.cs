@@ -45,6 +45,7 @@
             // 
             // rtbShow
             // 
+            rtbShow.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             rtbShow.Location = new Point(12, 132);
             rtbShow.Name = "rtbShow";
             rtbShow.Size = new Size(877, 363);
